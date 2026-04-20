@@ -85,4 +85,24 @@ ingresos_por_dia = get_ingresos_por_dia(ventas)
 
 # 6. Representación de Datos
 resumen_ventas = get_resumen_ventas(precios_por_producto)
-# print(json.dumps(resumen_ventas, indent=4, ensure_ascii=False))
+
+
+# SALIDA COMPLETA
+print("==================================================")
+print("ANÁLISIS DE VENTAS")
+print("==================================================")
+
+print("\n1. VENTAS ORIGINALES:")
+print(json.dumps(ventas, indent=2, ensure_ascii=False))
+
+print("\n2. INGRESOS TOTALES:")
+print(f"{ingresos_totales}")
+
+print("\n3. PRODUCTO MÁS VENDIDO:")
+print(f"{producto_mas_vendido}: {ventas_por_producto[producto_mas_vendido]} unidades")
+
+print("\n4. INGRESOS POR DÍA:")
+print(json.dumps(ingresos_por_dia, indent=2, ensure_ascii=False))
+
+print("\n5. RESUMEN DE VENTAS POR PRODUCTO:")
+print(json.dumps(resumen_ventas, indent=4, ensure_ascii=False))
