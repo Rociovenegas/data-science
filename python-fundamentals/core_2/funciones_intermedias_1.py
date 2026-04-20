@@ -7,7 +7,7 @@ matriz = [ [10, 15, 20], [3, 7, 14] ]
 # [ [10, 15, 20], [6, 7, 14] ]
 
 matriz[1][0] = 6
-# print(matriz)
+print(matriz)
 
 cantantes = [
     {"nombre": "Ricky Martin", "pais": "Puerto Rico"},
@@ -16,7 +16,7 @@ cantantes = [
 # Cambia el nombre del primer cantante de “Ricky Martin” a “Enrique Martin Morales”
 cantantes[0]["nombre"] = "Enrique Martin Morales"
 # cantantes[0].update({"nombre": "Enrique Martin Morales"})
-# print(cantantes)
+print(cantantes)
 
 ciudades = {
     "México": ["Ciudad de México", "Guadalajara", "Cancún"],
@@ -25,7 +25,7 @@ ciudades = {
 
 # Cambia “Cancún” por “Monterrey” en la lista de ciudades de México.
 ciudades["México"][2] = "Monterrey"
-# print(ciudades)
+print(ciudades)
 
 coordenadas = [
     {"latitud": 8.2588997, "longitud": -84.9399704}
@@ -34,7 +34,7 @@ coordenadas = [
 # En las coordenadas, cambia el valor de “latitud” por 9.9355431
 
 coordenadas[0]["latitud"] = 9.9355431
-#print(coordenadas)
+print(coordenadas)
 
 ############################################################
 # 2. Iterar a través de una lista de diccionarios
@@ -58,7 +58,7 @@ cantantes2 = [
     {"nombre": "Juan Luis Guerra", "pais": "República Dominicana"}
 ]
 
-# iterarDiccionario(cantantes2)
+iterarDiccionario(cantantes2)
 
 ############################################################
 # 3. Obtener valores de una lista de diccionarios
@@ -71,8 +71,8 @@ def iterarDiccionario2(llave, lista):
         else:
             print(f"La llave '{llave}' no se encuentra en el diccionario: {diccionario}")
     
-# iterarDiccionario2("nombre", cantantes2)
-# iterarDiccionario2("pais", cantantes2)
+iterarDiccionario2("nombre", cantantes2)
+iterarDiccionario2("pais", cantantes2)
 
 
 ############################################################
@@ -92,4 +92,4 @@ costa_rica = {
     "comidas": ["gallo pinto", "casado", "tamales", "chifrijo", "olla de carne"]
 }
 
-# imprimirInformacion(costa_rica)
+imprimirInformacion(costa_rica)
